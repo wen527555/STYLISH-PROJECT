@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>STYLISH</title>
+    <link rel="styleSheet" type="text/css" href="./src/styles/index.css" />
+    <script type="module" src="./index.js" defer></script>
+  </head>
+  <body>
+    <div class="overlay"></div>
+    <div class="msgModel">
+      <p class="msgText"></p>
+    </div>
+    <header>
+      <div class="navLeft">
+        <button class="navLogo">
+          <img src="./src/images/logo.png" />
+        </button>
+        <div class="mobileSearch">
+          <input
+            class="mobileInput searchInputs hidden"
+            type="text"
+            placeholder="西裝"
+          />
+          <img class="mobileSearchButton" src="./src/images/search.png" />
+        </div>
+        <ul class="navLeftItems">
+          <li class="navLeftItem">
+            <button data-category="women">女裝</button>
+          </li>
+          <li class="navLeftItem">
+            <button data-category="men">男裝</button>
+          </li>
+          <li class="navLeftItem">
+            <button data-category="accessories">配件</button>
+          </li>
+        </ul>
+      </div>
+      <div class="navRight">
+        <div class="navSearch">
+          <input
+            class="desktopInput searchInputs"
+            type="text"
+            placeholder="西裝"
+          />
+          <img class="desktopSearchButton" src="./src/images/search.png" />
+        </div>
+        <div class="navIcons">
+          <div class="cartBox">
+            <button class="cartBtn">
+              <img src="./src/images/cart.png" />
+              <div class="navCartNum"></div>
+            </button>
+            <div class="navIconText">購物車</div>
+          </div>
+          <button class="memberBtn">
+            <img src="./src/images/member.png" />
+            <div class="navIconText">會員</div>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="mainTop">
+        <div class="mainTopCarousel">
+          <div class="carouselSlides"></div>
+          <div class="carouselDots"></div>
+        </div>
+      </div>
+      <div class="mainBottom">
+        <div class="mainCards"></div>
+        <div class="loading hidden">
+          <img src="./src/images/loading.gif" />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="footerTop">
+        <div class="footerLeft">
+          <div class="footerLeftItem"><a href="">關於 STYLiSH</a></div>
+          <div class="footerLeftItem"><a href="">服務條款</a></div>
+          <div class="footerLeftItem"><a href="">隱私政策</a></div>
+          <div class="footerLeftItem"><a href="">聯絡我們</a></div>
+          <div class="footerLeftItem"><a href="">FAQ</a></div>
+        </div>
+        <div class="footerRightItems">
+          <div class="footerRightItem">
+            <a>
+              <img src="./src/images/line.png" />
+            </a>
+          </div>
+          <div class="footerRightItem">
+            <a>
+              <img src="./src/images/twitter.png" />
+            </a>
+          </div>
+          <div class="footerRightItem">
+            <a>
+              <img src="./src/images/facebook.png" />
+            </a>
+          </div>
+        </div>
+        <div class="footerText">
+          <p>@2018. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
